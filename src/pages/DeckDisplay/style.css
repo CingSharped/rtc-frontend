@@ -1,0 +1,48 @@
+.deck-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+
+.featured-card {
+    text-align: center;
+}
+
+.card-art {
+    /* Placeholder for the card art styling */
+    background-color: #ddd;
+    height: 100px;
+    line-height: 100px;
+    /* For vertical centering */
+    margin-bottom: 10px;
+    flex-grow: 2;
+}
+
+.edit-deck-button,
+.share-button,
+.download-button,
+.share-link-button {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.comments {
+    font-style: italic;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red ;
+    margin: 10px;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    margin: 10px;
+}

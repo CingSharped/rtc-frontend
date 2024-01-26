@@ -1,5 +1,5 @@
 import React from 'react'
-import { DeckInfo, DeckStats } from '../../components'
+import { DeckInfo, DeckStats, CardList } from '../../components'
 import "./style.css";
 
 function DeckDisplay() {
@@ -26,6 +26,9 @@ function DeckDisplay() {
           <div className="comments">
             <p>Comments: 12</p>
           </div>
+        </section>
+        <section>
+          <CardList />
         </section>
       </div>
     </div>

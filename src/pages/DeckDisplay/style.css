@@ -1,7 +1,6 @@
 .deck-display {
     border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

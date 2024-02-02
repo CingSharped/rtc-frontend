@@ -1,9 +1,7 @@
 nav {
-
-  height: 100px;
   background-color:gray;
   color: rgb(33, 33, 33);
-  width: 100%;
+  width: auto;
   top: 0;
   left: 0;
   position: absolute;
@@ -30,9 +28,9 @@ nav a {
 
 .nav-links {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1em;
 }

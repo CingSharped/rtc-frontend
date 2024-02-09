@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { DeckList, Watchlist, News } from '../../components';
 
 const Dashboard = () => {
+
+  const newsItems = [
+    // Array of news items
+    { title: "News 1" , content: "Some stuff"},
+    { title: "News 2" , content: "Some stuff" },
+  ];
   return (
-    <div>Dashboard</div>
-  )
-}
+    <div className="dashboard">
+      <h1>Dashboard</h1>
+      <News newsItems={newsItems}/>
+      <Watchlist />
+      <DeckList />
+    </div>
+  );
+};
 
 export default Dashboard

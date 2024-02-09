@@ -1,7 +1,6 @@
-.login-container {
-  display: flex;
-    justify-content: center;
-    justify-self: center;
+.watchlist {
+    padding: 5px;
+    display: flex;
     flex-direction: column;
     max-width: 600px;
     border: 3px solid black;
@@ -11,13 +10,10 @@
     margin: 20px auto 20px auto;
     background-color: #282828;
 }
-  
-.input-field {
-  margin-bottom: 20px;
-  padding: 5px;
-  height: 20px;
-}
 
-label {
-  text-align: left;
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

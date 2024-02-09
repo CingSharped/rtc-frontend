@@ -1,6 +1,5 @@
 import React from 'react'
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { UserDisplay } from '../'
 import './style.css'
 
 const NavBar = () => {
@@ -8,12 +7,15 @@ const NavBar = () => {
     <header>
       <nav>
         <div className='nav-links'>
-          <UserDisplay />
 
           <NavLink to="/">Home</NavLink>
           <NavLink to='/dashboard'>Dashboard</NavLink>
           <NavLink to='/login'>Login</NavLink>
           <NavLink to='/signup'>Signup</NavLink>
+          <NavLink to='/profile'>Profile</NavLink>
+          <NavLink to='/cardsearch'>Card Search</NavLink>
+          <NavLink to='/support'>Support</NavLink>
+          <NavLink to='/about'>About Us</NavLink>
         </div>
       </nav>
       <Outlet />

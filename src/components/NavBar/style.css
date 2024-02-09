@@ -1,8 +1,8 @@
 nav {
   background-color:gray;
   color: rgb(33, 33, 33);
-  width: auto;
-  top: 0;
+  width: 100%;
+  bottom: 0;
   left: 0;
   position: absolute;
 
@@ -21,16 +21,16 @@ nav a.active {
 
 nav a {
   color: black;
-  padding: 30px;
+  padding: 20px 0px 20px 0px;
 }
 
 
 
 .nav-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  font-size: 1em;
+  font-size: 0.7em;
 }

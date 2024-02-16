@@ -1,0 +1,4 @@
+.card-list {
+    overflow-y: scroll;
+    border: 5px solid black;
+}

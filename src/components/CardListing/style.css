@@ -6,9 +6,16 @@
 
 .card-info {
     display: flex;
-
+    flex-direction: column;
+    flex-grow: 2;
 }
 
 .card-image {
+    flex-grow: 1;
 
+}
+
+.card-desc {
+    border: 5px solid black;
+    margin: ;
 }

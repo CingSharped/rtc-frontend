@@ -13,6 +13,8 @@ function App() {
         <Route path='/deckdisplay' element={<Pages.DeckDisplay />}/>
         <Route path='/login' element={<Pages.Login />} />
         <Route path='/signup' element={<Pages.Signup />} />
+        <Route path='/cardsearch' element={<Pages.CardSearch />} />
+        <Route path="*" element={<Pages.NotFound />} />
       </Route>
     </Routes>
   )

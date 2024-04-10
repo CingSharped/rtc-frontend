@@ -1,10 +1,10 @@
 import React from 'react'
-import { CardList } from '../../components'
+import { CardSearchBar } from '../../components';
 
 const CardSearch = () => {
   return (
     <div>
-        <CardList />
+        <CardSearchBar />
 
     </div>
   )

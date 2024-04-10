@@ -7,25 +7,36 @@ function CardListing({ name, card_images, type, attribute, desc, atk, def, level
     // const spellAndTrapIdentifier = {"Quick-Play": "image-link"};
 
     return (
-    <div className="card">
-      <div className="card-image">
-        <img src={imageUrl} alt="" />
-      </div>
-      <div className="card-info">
-        <h2 className='card-name'>{name}</h2>
-        {level ? <p className='card-level'>{(type === "XYZ Monster" ? "Rank: " : "Level: ")}{level}</p> : <></>}
-        {linkval ? <p className='card-linkval'>Link Val: {linkval}</p> : <></>}
-        {scale ? <p className='card-scale'>Scale: {scale}</p> : <></>}
-        <p className='card-type'>Type: {type}</p>
-        <p className='card-desc'>{desc}</p>
-        <p className='card-attribute'>Attribute: {attribute}</p>
-        <div>
-            <p className='card-atk'>Atk:{atk}</p>
-            {def ? <p className='card-def'>Def:{def}</p> : <></>}
+      <div className="card">
+        <div className="card-image">
+          <img src={imageUrl} alt="" />
+        </div>
+        <div className="card-info">
+          <h2 className="card-name">{name}</h2>
+          <div className='card-stats'>
+            {level ? (
+              <p className="card-level">
+                {type === "XYZ Monster" ? "Rank: " : "Level: "}
+                {level}
+              </p>
+            ) : (
+              <></>
+            )}
+            {linkval ? (
+              <p className="card-linkval">Link Val: {linkval}</p>
+            ) : (
+              <></>
+            )}
+            {scale ? <p className="card-scale">Scale: {scale}</p> : <></>}
+            <p className="card-type">Type: {type}</p>
+            <p className="card-attribute">Attribute: {attribute}</p>
+            <p className="card-atk">Atk:{atk}</p>
+            {def ? <p className="card-def">Def:{def}</p> : <></>}
+          </div>
+          <p className="card-desc">{desc}</p>
         </div>
       </div>
-    </div>
-  );
+    );
 }
 
 export default CardListing

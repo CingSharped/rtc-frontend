@@ -2,6 +2,7 @@
     border: 3px solid white;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .card-info {
@@ -11,11 +12,23 @@
 }
 
 .card-image {
-    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: start;
+}
 
+.card-name {
+    display: block;
 }
 
 .card-desc {
     border: 5px solid black;
-    margin: ;
+    margin: 10px;
+    flex-grow: 2;
+}
+
+.card-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

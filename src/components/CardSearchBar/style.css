@@ -1,0 +1,21 @@
+.search-bar {
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.search-bar button {
+
+}
+
+.card-search-text {
+    flex-grow: 3;
+    font-size: large;
+    padding: 5px;
+    margin: 10px;
+}
+
+.card-search-icons {
+    flex-shrink: 1;
+    margin: 5px;
+}

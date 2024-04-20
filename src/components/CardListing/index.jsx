@@ -1,19 +1,25 @@
+import { useState } from 'react';
 import './style.css'
 
 function CardListing({ name, card_images, type, attribute, desc, atk, def, level , scale, linkval}) {
     const imageUrl = card_images[0].image_url_small;
+    const [clicked,setClicked] = useState(false);
 
+    function userClicked() {
+      setClicked(!clicked)
+    }
     // This will be used to display corresponding image to type of card, e.g. quickplay, counter, continuous, etc
     // const spellAndTrapIdentifier = {"Quick-Play": "image-link"};
 
     return (
-      <div className="card">
+      <div>
+      <div className="card" onClick={() => userClicked()}>
         <div className="card-image">
           <img src={imageUrl} alt="" />
         </div>
         <div className="card-info">
           <h2 className="card-name">{name}</h2>
-          <div className='card-stats'>
+          <div className="card-stats">
             {level ? (
               <p className="card-level">
                 {type === "XYZ Monster" ? "Rank: " : "Level: "}
@@ -36,6 +42,12 @@ function CardListing({ name, card_images, type, attribute, desc, atk, def, level
           <p className="card-desc">{desc}</p>
         </div>
       </div>
+        {clicked ? (
+          <div className='card-controls'>Hellooooooooooooooooooooooooooooooooooooooooooooooooooo</div>
+        ) : (
+          <></>
+        )}
+        </div>
     );
 }
 

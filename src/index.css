@@ -31,3 +31,6 @@ textarea {
   resize: vertical;
 }
 
+.input-field {
+  margin: 10px;
+}

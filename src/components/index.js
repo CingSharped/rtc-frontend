@@ -10,3 +10,4 @@ export { default as DeckList } from "./DeckList";
 export { default as News } from "./News";
 export { default as CardSearchBar } from "./CardSearchBar"
 export { default as SupportForm } from './SupportForm'
+export { default as ChangeUsernameForm } from './ChangeUsernameForm'

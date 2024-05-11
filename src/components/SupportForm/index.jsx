@@ -61,14 +61,14 @@ function SupportForm() {
         />
 
         <label htmlFor="Description">Description of issue</label>
-        <input
+        <textarea
           className="input-field"
-          type="text"
+          rows="10"
           placeholder="I cannot log in"
           aria-label="Support Textbox"
           value={descriptionInput}
           onChange={handleDescription}
-        />
+        > cannot log in</textarea>
         <button type="submit">Submit</button>
       </form>
     </>

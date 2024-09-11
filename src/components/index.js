@@ -7,6 +7,7 @@ export { default as LoginForm } from "./LoginForm"
 export { default as SignupForm } from "./SignupForm"
 export { default as Watchlist } from "./Watchlist";
 export { default as DeckList } from "./DeckList";
+export { default as DeckListing } from "./DeckListing";
 export { default as News } from "./News";
 export { default as CardSearchBar } from "./CardSearchBar"
 export { default as SupportForm } from './SupportForm'

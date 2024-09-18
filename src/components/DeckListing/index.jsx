@@ -16,7 +16,7 @@ const DeckListing = ({
   };
 
   return (
-    <div>
+    <div className="frame">
       <h3>{`${deck_name} by ${created_by}`}</h3>
       <p>{deck_description}</p>
       {is_public && <span>Public Deck</span>}

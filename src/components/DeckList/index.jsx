@@ -32,7 +32,7 @@ const DeckList = () => {
   }, []);
 
   return (
-    <div className="decklist">
+    <div className="decklist frame">
       <h2>Decks</h2>
       <div className="decks">
         {decks.map((deck, index) => (

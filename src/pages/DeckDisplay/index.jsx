@@ -1,4 +1,3 @@
-import React from 'react'
 import { DeckInfo, DeckStats, CardList } from '../../components'
 import "./style.css";
 

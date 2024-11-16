@@ -19,7 +19,7 @@ const News = ({ newsItems }) => {
   }
 
   return (
-    <div className="news">
+    <div className="news frame">
       {newsItems.map((item, index) => (
         <div
           className={index === current ? 'slide active' : 'slide'}

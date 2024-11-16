@@ -10,7 +10,7 @@ const Watchlist = () => {
   ];
 
   return (
-    <div className="watchlist">
+    <div className="watchlist frame">
       <h2>Watchlist</h2>
       <div className='list'>
         {watchlistItems.map((item, index) => (

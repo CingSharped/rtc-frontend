@@ -44,11 +44,13 @@ function CardListing({ name, card_images, type, attribute, desc, atk, def, level
         </div>
         {clicked ? (
           <div className="card-controls">
-            <p>Cardmarket: £{card_prices[0].cardmarket_price}</p>
-            <p>TCG Player: £{card_prices[0].tcgplayer_price}</p>
-            <p>Ebay: £{card_prices[0].ebay_price}</p>
-            <p>Amazon: £{card_prices[0].amazon_price}</p>
-            <p>Cool Stuff Inc: £{card_prices[0].coolstuffinc_price}</p>
+            <ul>
+              <li>Cardmarket: £{card_prices[0].cardmarket_price}</li>
+              <li>TCG Player: £{card_prices[0].tcgplayer_price}</li>
+              <li>Ebay: £{card_prices[0].ebay_price}</li>
+              <li>Amazon: £{card_prices[0].amazon_price}</li>
+              <li>Cool Stuff Inc: £{card_prices[0].coolstuffinc_price}</li>
+            </ul>
           </div>
         ) : (
           <></>

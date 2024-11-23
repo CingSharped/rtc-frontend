@@ -8,7 +8,7 @@ const Dashboard = () => {
     { title: "News 2" , content: "Some stuff" },
   ];
   return (
-    <div className="dashboard">
+    <div>
       <h1>Dashboard</h1>
       <News newsItems={newsItems}/>
       <Watchlist />

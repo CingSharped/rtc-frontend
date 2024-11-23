@@ -965,7 +965,7 @@ const CardSearchBar = () => {
       console.log(`form submitted ${searchInput}`);
     };
     return (
-      <div>
+      <div className="frame">
         <form onSubmit={handleSubmit} className="search-bar">
           <input
             className="card-search-text"
